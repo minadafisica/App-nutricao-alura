@@ -1,6 +1,6 @@
 # 🍽️ Nutri.AI - Seu agente de análise de alimentos 
 
-Seu agente de volso para analisar suas refeições, identificando os alimentos presentes e te ajudando a controlar a caloria da refeição. 
+Seu agente de bolso para analisar suas refeições, identificando os alimentos presentes e te ajudando a controlar a caloria da refeição. 
 
 ---
 
@@ -14,7 +14,7 @@ Essa dificuldade pessoal ganhou um novo significado ao observar a luta da minha 
 
 Foi assim que surgiu a ideia deste projeto: utilizar a Inteligência Artificial para facilitar essa prática. Ao permitir que uma simples foto da refeição (como uma marmita preparada para a semana) seja analisada para identificar os alimentos, buscamos remover uma barreira significativa no acompanhamento nutricional. Este "Agente de análise de alimentos" é um primeiro passo para tornar o processo de seguir uma planilha nutricional mais intuitivo e menos frustrante, ajudando pessoas como a minha mãe – e tantas outras – a ter uma relação mais fácil e organizada com a alimentação saudável e alcançar seus objetivos de saúde.
 
-----
+---
 
 ## Como Funciona
 
@@ -26,10 +26,11 @@ O "Agente de análise de alimentos" opera da seguinte forma:
 4.  Você indica a quantidade e a unidade de medida de cada alimento (a IA tentará sugerir uma unidade).
 5. O modelo retorna o cálculo de estimativa.
 
-----
+---
+
 [Visualização](https://imgur.com/a/m3vCXt3)
 
-----
+---
 ## 🔗 Acesse
 
 A maneira mais fácil de usar este agente é através: https://app-nutricao-alura-8tnccannmw7xuvf8k6ob6b.streamlit.app/#analise-de-pratos-com-ia-e-estimativa-de-calorias-gemini
