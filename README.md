@@ -1,44 +1,76 @@
-# 🍽️ Agente de Análise de Alimentos (Food Analysis Agent)
+# 🍽️ Nutri.AI - Seu agente de análise de alimentos 
 
-Um agente simples desenvolvido em Google Colab para analisar imagens de pratos de comida, identificar os alimentos presentes e retornar os resultados em formato JSON. Ideal para quem deseja experimentar análise de imagem com IA sem a necessidade de configuração local complexa.
+Seu agente de volso para analisar suas refeições, identificando os alimentos presentes e te ajudando a controlar a caloria da refeição. 
 
-## ✨ Sobre o Projeto
+---
 
+## Sobre o Nutri.AI
 
+A preocupação com a saúde e a nutrição tem ganhado cada vez mais destaque, e no Brasil, um país com um histórico rico em políticas de segurança alimentar e nutricional, esse cuidado se manifesta de diversas formas. No entanto, transformar a orientação nutricional em prática diária ainda é um grande desafio para muitas pessoas.
 
-## 🚀 Como Funciona
+Minha própria jornada com aplicativos de acompanhamento nutricional sempre esbarrou na frustração de ter que inserir manualmente cada alimento consumido. Esse processo, muitas vezes tedioso e demorado, desencorajava o uso contínuo e dificultava seguir as recomendações de um nutricionista de forma consistente.
 
-O "Agente de Análise de Alimentos" opera da seguinte forma:
+Essa dificuldade pessoal ganhou um novo significado ao observar a luta da minha mãe contra o sobrepeso ao longo dos anos. Ver a complexa relação dela com a comida e os desafios em manter uma alimentação saudável me motivou a buscar soluções que pudessem simplificar esse dia a dia, tornando a organização e o acompanhamento do plano nutricional menos onerosos. Iniciativas como cozinhar para a semana ou preparar marmitas já ajudam, mas a ponte entre a refeição pronta e o registro no plano nutricional ainda era um obstáculo.
 
-1.  Você fornece uma imagem de uma refeição (seja fazendo upload no Colab ou fornecendo uma URL).
-2.  O código no Google Colab carrega e pré-processa a imagem.
-3.  Um modelo de classificação de imagem pré-treinado (especializado em alimentos) analisa a imagem.
-4.  O modelo retorna as probabilidades de diferentes alimentos estarem presentes na imagem.
-5.  O código seleciona os alimentos com maior confiança e formata essa informação em uma string JSON.
-6.  A string JSON é exibida como saída.
+Foi assim que surgiu a ideia deste projeto: utilizar a Inteligência Artificial para facilitar essa prática. Ao permitir que uma simples foto da refeição (como uma marmita preparada para a semana) seja analisada para identificar os alimentos, buscamos remover uma barreira significativa no acompanhamento nutricional. Este "Agente de análise de alimentos" é um primeiro passo para tornar o processo de seguir uma planilha nutricional mais intuitivo e menos frustrante, ajudando pessoas como a minha mãe – e tantas outras – a ter uma relação mais fácil e organizada com a alimentação saudável e alcançar seus objetivos de saúde.
 
-## 🛠️ Tecnologias Utilizadas
+----
 
+## Como Funciona
+
+O "Agente de análise de alimentos" opera da seguinte forma:
+
+1.  Você fornece uma imagem de uma refeição.
+2.  Um agente analisa a imagem.
+3.  O modelo retorna as probabilidades de diferentes alimentos estarem presentes na imagem.
+4.  Você indica a quantidade e a unidade de medida de cada alimento (a IA tentará sugerir uma unidade).
+5. O modelo retorna o cálculo de estimativa.
+
+----
+[Visualização](https://imgur.com/a/m3vCXt3)
+
+----
+## 🔗 Acesse
+
+A maneira mais fácil de usar este agente é através: https://app-nutricao-alura-8tnccannmw7xuvf8k6ob6b.streamlit.app/#analise-de-pratos-com-ia-e-estimativa-de-calorias-gemini
+---
+## Tecnologias 
 * **Python:** Linguagem de programação principal.
-* **Google Colab:** Ambiente de execução baseado em notebook, fornecendo acesso a GPUs/TPUs.
-* **Hugging Face `transformers`:** Biblioteca para fácil acesso e uso de modelos de ML pré-treinados, incluindo o pipeline de classificação de imagem.
-* **`torch`:** Framework de Deep Learning (utilizado pelo modelo via `transformers`).
-* **`Pillow` (PIL):** Biblioteca para manipulação básica de imagens.
-* **`requests`:** Para baixar imagens de URLs.
-* **`json`:** Para formatar a saída.
+* **Google Gemini** 
+* **Streamlit**
+* **Github**
+---
+## Documentação e pesquisa
 
-## 🔗 Acesse e Use no Google Colab
+- [Gemini API](https://ai.google.dev/gemini-api/docs/get-started/rest?hl=pt-br) para entender como aplicar no projeto;
+- [GitHub do Google Gemini](https://github.com/google-gemini/generative-ai-js) para escrever o código de teste no Google Colab usando python.
+- [Imersão ALura e Google Gemini]
 
-A maneira mais fácil de usar este agente é executá-lo diretamente no Google Colab.
+---
+  
+## Status do projeto (dentro dos meus conhecimentos de iniciante):
+- [x] Interface principal;
+- [x] Funcionalidade de selecionar imagens da galeria;
+- [x] Gerar a descrição da imagem com a IA;
+- [x] Funcionalidade para indicar a quantidade e unidade de medida;
+- [x] Gerar a estimativa de calorias com a IA.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<SEU_USUARIO_GITHUB>/<NOME_DO_SEU_REPOSITORIO>/blob/main/<NOME_DO_SEU_NOTEBOOK>.ipynb)
+## Próximos Passos 
+Este projeto é um ponto de partida! Futuras melhorias planejadas incluem:
 
-1.  Clique no botão acima "Open In Colab".
-2.  O notebook será aberto no seu ambiente Colab.
-3.  Execute as células sequencialmente (clicando no botão de play ou `Shift + Enter`).
-4.  A primeira célula instalará as dependências.
-5.  A célula seguinte pedirá para você fazer upload de uma imagem do seu computador.
-6.  Após o upload, o agente analisará a imagem e imprimirá a resposta JSON na saída da célula.
-7.  Alternativamente, você pode descomentar e usar a opção de analisar uma imagem via URL no código.
 
-**Certifique-se de substituir `<SEU_USUARIO_GITHUB>`, `<NOME_DO_SEU_REPOSITORIO>` e `<NOME_DO_SEU_NOTEBOOK>.ipynb` no link do Colab acima para que ele aponte para o seu repositório!**
+- [] Sugestão de Complementos: A IA poderá sugerir complementos para a refeição analisada, visando balanceamento nutricional ou variedade.
+- [] Emojis na Saída: Substituir nomes de utensílios ou indicadores de quantidade por emojis para uma visualização mais intuitiva (ex: "1 🥄 de açúcar", "uma 🥣 de sopa").
+- [] Integração com Plano Nutricional:
+- [] Permitir que o usuário configure seu plano nutricional (importando dados desenvolvidos por um nutricionista).
+- [] A IA analisará a refeição e indicará se ela se alinha ou se desvia do plano nutricional do usuário.
+- [] Fornecer dicas personalizadas sobre como ajustar futuras refeições para se manter no plano ou como compensar um "desvio"
+
+### Para um futuro
+- [] Conectar com os dados do smartwatch e valores de bioimpedânica para ter um acompanhamento mais completo.
+
+## Conecte-se comigo
+<p> Caso tenha alguma dúvida, queira mandar o seu feedback ou só bater um papo mesmo, conecte-se comigo por meio dessas redes:</p>
+
+- [LinkedIn](https://www.linkedin.com/in/gabriela-oliveira42/)
+-Instagram/Tiktok: @minadafisica
