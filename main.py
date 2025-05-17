@@ -69,7 +69,7 @@ st.set_page_config(
     layout="centered"
 )
 
-st.title(f"🍽️ Análise de Pratos com IA e Estimativa de Calorias (Gemini)")
+st.title(f"🍽️ Análise de Pratos com IA e Estimativa de Calorias")
 st.markdown("""
     Envie uma foto do seu prato, identifique os alimentos e estime as calorias usando a IA do Gemini!
     """)
