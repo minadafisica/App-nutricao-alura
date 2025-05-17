@@ -40,6 +40,38 @@ A maneira mais fácil de usar este agente é através: https://app-nutricao-alur
 * **Google Gemini** 
 * **Streamlit**
 * **Github**
+
+* **Pillow (PIL)**
+Usado em: Ambos arquivos
+Função: Abrir e manipular a imagem carregada pelo usuário antes de enviar para análise com IA (formato PIL.Image.Image).
+Por que: Necessário para lidar com imagens de forma compatível com Streamlit e a API do Gemini.
+
+* **Google Generative AI (Gemini)**
+Usado em: gemini_agent.py
+Função: Análise da imagem do prato com o Gemini Pro Vision para identificar alimentos e sugerir unidades.
+Estimativa de calorias com o Gemini Pro com base em alimento, quantidade e unidade.
+Por que: Permite análise de conteúdo multimodal (texto + imagem) e gera respostas estruturadas em JSON.
+
+* **[JSON (builtin)]**
+Usado em: gemini_agent.py
+Função: Converter texto gerado pelo Gemini em dicionários Python para posterior uso e exibição.
+Por que: Gemini responde com strings que precisam ser transformadas em dados utilizáveis (JSON → dict).
+
+* **[time (builtin)]**
+Usado em: main.py
+Função: Inserção de pequenas pausas (time.sleep) após processamento, possivelmente para UX ou controle de chamadas.
+Por que: Ajuda a simular tempo de carregamento ou evitar chamadas rápidas em sequência.
+
+* **[os (builtin)]**
+Usado em: gemini_agent.py
+Função: Capturar a variável de ambiente GOOGLE_API_KEY para autenticação com a API do Gemini.
+Por que: Boa prática de segurança — evita hardcode de chaves sensíveis no código.
+
+* **[st.session_state (Streamlit)]**
+Usado em: app_streamlit.py
+Função: Manter estado entre interações do usuário (ex: imagem analisada, resultados salvos).
+Por que: Evita reprocessar tudo a cada interação, melhorando performance e UX.
+
 ---
 ## Documentação e pesquisa
 
