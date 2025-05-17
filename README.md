@@ -1,4 +1,4 @@
-# 🍽️ Nutri.AI - Seu agente de análise de alimentos 
+# 🍽️ Nutri.AI - Agente de análise de alimentos 
 
 Seu agente de bolso para analisar suas refeições, identificando os alimentos presentes e te ajudando a controlar a caloria da refeição. 
 
@@ -20,21 +20,15 @@ Foi assim que surgiu a ideia deste projeto: utilizar a Inteligência Artificial 
 
 O "Agente de análise de alimentos" opera da seguinte forma:
 
-1.  Você fornece uma imagem de uma refeição.
+1.  Você fornece qualquer imagem de refeição. [(Imagem para teste)](https://github.com/minadafisica/App-nutricao-alura/blob/main/Imagem_para_teste.jpg)
 2.  Um agente analisa a imagem.
 3.  O modelo retorna as probabilidades de diferentes alimentos estarem presentes na imagem.
 4.  Você indica a quantidade e a unidade de medida de cada alimento (a IA tentará sugerir uma unidade).
 5. O modelo retorna o cálculo de estimativa.
 
----
 
-[Visualização](https://imgur.com/a/m3vCXt3)
+# 🔗 [Acesse aqui e teste o Nutri.Ai](https://app-nutricao-alura-8tnccannmw7xuvf8k6ob6b.streamlit.app/#analise-de-pratos-com-ia-e-estimativa-de-calorias-gemini)
 
----
-## 🔗 Acesse
-
-A maneira mais fácil de usar este agente é através: https://app-nutricao-alura-8tnccannmw7xuvf8k6ob6b.streamlit.app/#analise-de-pratos-com-ia-e-estimativa-de-calorias-gemini
----
 ## Tecnologias 
 
 * **Pillow (PIL)**
@@ -103,6 +97,8 @@ Por que: Evita reprocessar tudo a cada interação, melhorando performance e UX.
 - [x] Funcionalidade para indicar a quantidade e unidade de medida;
 - [x] Gerar a estimativa de calorias com a IA.
 
+[Clique aqui para acessar o modelo do aplicativo](https://imgur.com/a/F21Q0uz)
+
 ## Próximos Passos 
 Este projeto é um ponto de partida! Futuras melhorias planejadas incluem:
 
@@ -116,9 +112,12 @@ Este projeto é um ponto de partida! Futuras melhorias planejadas incluem:
 
 ### Para um futuro
 - [] Conectar com os dados do smartwatch e valores de bioimpedânica para ter um acompanhamento mais completo.
+  
+---
 
 ## Conecte-se comigo
 <p> Caso tenha alguma dúvida, queira mandar o seu feedback ou só bater um papo mesmo, conecte-se comigo por meio dessas redes:</p>
 
 - [LinkedIn](https://www.linkedin.com/in/gabriela-oliveira42/)
--Instagram/Tiktok: @minadafisica
+
+- -Instagram/Tiktok: @minadafisica
