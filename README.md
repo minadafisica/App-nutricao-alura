@@ -120,4 +120,4 @@ Este projeto é um ponto de partida! Futuras melhorias planejadas incluem:
 
 - [LinkedIn](https://www.linkedin.com/in/gabriela-oliveira42/)
 
-- -Instagram/Tiktok: @minadafisica
+- Instagram/Tiktok: @minadafisica
